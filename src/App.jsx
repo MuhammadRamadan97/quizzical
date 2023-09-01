@@ -99,8 +99,8 @@ console.log(questions)
   }
 
   function check(){
-    document.body.classList.add("check")
-    setState("checkAnswers")
+    if(questions.filter(quest => quest.answers.filter(answer => answer isSelected)).length=5){
+    setState("checkAnswers")}
   }
 
    function calculateCorrectAnswers() {
