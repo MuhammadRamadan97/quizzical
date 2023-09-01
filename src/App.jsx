@@ -99,7 +99,7 @@ console.log(questions)
   }
 
   function check(){
-    if(questions.filter(quest => quest.answers.filter(answer => answer isSelected)).length=5){
+    if(questions.filter(quest => quest.answers.filter(answer => answer isSelected)).length==5){
     setState("checkAnswers")}
   }
 
